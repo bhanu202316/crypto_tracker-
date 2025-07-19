@@ -14,7 +14,7 @@ function App() {
     }
     setError(null);
     try {
-      const response = await axios.get('http://localhost:5000/api/coins');
+      const response = await axios.get('https://crypto-tracker-4.onrender.com/api/coins');
       setCryptos(response.data);
       setLastUpdate(new Date().toLocaleTimeString());
     } catch (err) {
