@@ -1,0 +1,160 @@
+
+.app {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1a202c;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.refresh-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.refresh-btn:hover {
+  background-color: #0056b3;
+}
+
+.last-update {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.dashboard-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.crypto-table th,
+.crypto-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.crypto-table thead th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.crypto-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.crypto-table tbody tr:hover {
+  background-color: #f4f7f9;
+}
+
+.crypto-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coin-image {
+  width: 32px;
+  height: 32px;
+}
+
+.coin-name {
+  font-weight: 600;
+  display: block;
+}
+
+.coin-symbol {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+
+.positive {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.negative {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+
+.status-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  color: #ef4444;
+  margin-bottom: 20px;
+}
+
+
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #a0aec0;
+}
